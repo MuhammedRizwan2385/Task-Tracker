@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+
+    
+        <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <!-- boostrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+     <link rel="icon" type="image/jpg" href="./images/favicon.jpg">
+
+    
+</head>
+<body class="bg-light">
+    <div class="text-center mt-5 mb-4">
+    <h1 class="fw-bold text-dark">📋 Task Tracker</h1>
+    <p class="text-secondary">Organize your daily goals and stay on track.</p>
+</div>
+    <div class="container bg-white rounded-4 shadow-sm mt-4 p-4" >
+        <h4 class="fw-bold mb-4 text-success">Add New Task</h4>
+        <label class="form-label" for="task-title">Task Title</label>
+        <input type="text" class="form-control" id="task-title"  placeholder="Enter Task Title">
+        <label class="form-label" for="description">Task Description</label>
+        <textarea class="form-control" id="description" placeholder="Describe your task"></textarea>
+       
+        <button class="btn btn-success rounded-3 shadow-lg mt-3 py-2 fw-semibold" onclick="add()">+ Add Task</button>
+    </div>
+
+    <div class="container bg-white  border  rounded-4 shadow-sm mt-5 p-3">
+        <h4 class="fw-bold mb-4">My Task List 📋</h4>
+        <div class="table-responsive">
+        <table class="table table-hover table-striped text-center align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Title</th>
+                    <th >Description</th>
+                    <th >Status</th>
+                    <th >Action</th>
+                </tr>
+            </thead>
+            <tbody id="result">
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
